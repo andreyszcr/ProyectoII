@@ -38,7 +38,7 @@ public class Consultas
     //************************************************************************************************
     public static string extraerUsuario(string usuario)
     {
-        string cn = conexionBD(@"LAPTOP-KGHR2GJB\SQLEXPRESS", @"andrey", @"300399", @"TareaCorta");
+        string cn = conexionBD(@"ALBERTO-PC\QSOFT", @"sa", @"QsoftMSDEsa2005", @"BIBLIOTECA");
         string consulta = @"SELECT Usuario, contraseña FROM Registro WHERE Usuario='" + usuario + "'";
         SqlConnection conex = new SqlConnection(cn);
         conex.Open();
@@ -56,7 +56,7 @@ public class Consultas
     //****************************************************************************************************
     public static string extraerContraseña(string usuario)
     {
-        string cn = conexionBD(@"LAPTOP-KGHR2GJB\SQLEXPRESS", @"andrey", @"300399", @"TareaCorta");
+        string cn = conexionBD(@"ALBERTO-PC\QSOFT", @"sa", @"QsoftMSDEsa2005", @"BIBLIOTECA");
         string consulta = @"SELECT contraseña FROM Registro WHERE Usuario='" + usuario + "'";
         SqlConnection conex = new SqlConnection(cn);
         conex.Open();
