@@ -23,7 +23,7 @@ public class Consultas
         DataTable dt = new DataTable();
         da.Fill(dt);
 
-        if (1 == dt.Rows.Count)
+        if (1 == dt.Rows.Count) 
 
             existe = true;
 
