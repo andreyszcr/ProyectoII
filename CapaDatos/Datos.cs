@@ -27,25 +27,14 @@ namespace CapaDatos
 
         }
         //*******************************************************************************************************
-        public static void InsertarUsuarioBD(string usuario, string nombre, string apellido, string email, string contra)
-        {
-            string cn = conexionBD(@"LAPTOP-KGHR2GJB\SQLEXPRESS", @"andrey", @"300399", @"BIBLIOTECA");
-            string conex = cn.ToString();
-            string consulta = @"INSERT INTO Cedula (Cedula,Nombre,Apellidos,FechaNac,idTipoUsuario,email,Direccion,SEXO,Profesion,idCarrera) Values('" + usuario + @"','" + nombre + "','" + apellido + @"','" + email + @"','" + contra + @"')";
-            SqlConnection bd = new SqlConnection(cn);
-            SqlCommand MiComando = new SqlCommand(consulta, bd);
-            bd.Open();
-            MiComando.ExecuteNonQuery();
-            bd.Close();
-                
-        }
+        
         //****************************************************************************************************************************
         public static Boolean existeusuario(string usuario)
         {
             Boolean existe = false;
 
-            string cn = conexionBD(@"LAPTOP-KGHR2GJB\SQLEXPRESS", @"andrey", @"300399", @"BIBLIOTECA");
-            string consulta = @"SELECT Cedula, contraseña FROM Usuario WHERE Cedula='" + usuario + "'";
+            string cn = conexionBD(@"ALBERTO-PC\QSOFT", @"sa", @"QsoftMSDEsa2005", @"BIBLIOTECA");
+            string consulta = @"SELECT Cedula FROM Usuario WHERE Cedula='" + usuario + "'";
             SqlConnection conex = new SqlConnection(cn);
             conex.Open();
             SqlCommand query = new SqlCommand(consulta, conex);
