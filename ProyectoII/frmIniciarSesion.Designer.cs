@@ -1,6 +1,6 @@
 ﻿namespace ProyectoII
 {
-    partial class Form1
+    partial class frmIniciarSesion
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // frmIniciarSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 481);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(799, 540);
+            this.Name = "frmIniciarSesion";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
             this.ResumeLayout(false);
 
         }
