@@ -9,7 +9,7 @@ using System.Data;
 
 namespace CapaDatos
 {
-    public class Datos
+    public class Datos  
     {
         public static string conexionBD(string servidor, string usuario, string contraseña, string basedatos)
         {
@@ -24,7 +24,7 @@ namespace CapaDatos
 
 
             return conexionBD;
-
+             
         }
         //*******************************************************************************************************
         

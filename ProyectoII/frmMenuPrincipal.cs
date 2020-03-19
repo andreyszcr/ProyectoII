@@ -10,11 +10,33 @@ using System.Windows.Forms;
 
 namespace ProyectoII
 {
-    public partial class frmMenuPrincipal : Form
+    public partial class btnConsultas : Form
     {
-        public frmMenuPrincipal()
+        public btnConsultas()
         {
             InitializeComponent();
+            
         }
+        //*********************************************
+        public void customizeDesign()
+        {
+            
+        }
+        //*********************************************
+        public void hideSubmenu()
+        {
+
+        }
+        //*********************************************
+
+
+
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
